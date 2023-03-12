@@ -530,3 +530,17 @@ git remote add origin https://github.com/angelxescomx08/avengers-github.git
 
 git push -u origin main
 ```
+
+## Pasos para borrar una rama y su remoto
+
+1. Ver todas las ramas y sus remotos
+2. Borrar la rama (Debería ya haberse subido a github)
+3. Limpiar los remotos de las ramas borradas
+
+```
+git branch -a
+
+git branch -d rama-a-borrar
+
+git remote prune origin
+```
